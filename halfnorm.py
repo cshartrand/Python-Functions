@@ -30,7 +30,7 @@ def halfnorm(xdata,ydata,nobs):
     hold_outlier = []
     hold_i = []
     for i in range(0,nobs):
-        if abs_res[i] >= 2.0: #here I have chosen 2.5 SD's away from mean to indicate a possible outlier. Change as you wish
+        if abs_res[i] >= 2.0: #here I have chosen 2.0 SD's away from mean to indicate a possible outlier. Change as you wish
             hold_outlier.append(abs_res[i])
             hold_i.append(i)
 
